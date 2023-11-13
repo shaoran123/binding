@@ -1,0 +1,36 @@
+html{
+    background-color:#F3F2F2;
+}
+h1,h2,h3,h4,h5{
+    font-family:var(--font-display);
+    padding:calc(var(--spacing)*2);
+}
+aside{
+    background-color:var(--background-color);
+    padding:calc(var(--spacing)*2);
+}
+
+h2{
+    color:var(--title-color)
+}
+ul{
+    display: flex;
+    gap:calc(var(--spacing)*2);
+	flex-wrap: nowrap;
+}
+
+
+section{
+    padding:calc(var(--spacing)*2);
+}
+
+p{
+    padding: calc(var(--spacing)*2) 0px;
+}
+
+footer{
+    padding:calc(var(--spacing)*2);
+    background-color:var(--background-color);
+}
+
+

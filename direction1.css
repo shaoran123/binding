@@ -152,25 +152,42 @@ h2{
         font-weight:700;
     }
 
- 
+#button{
+    display:border;
+    border:2px solid #FF6E04;
+    background-color: #ffd117;
+    border-radius:50%;
+    padding:20px;
+    font-family:'Handjet', cursive;
+    margin-left:calc(var(--spacing)*2)
+    }
+    #button:hover{
+        background-color:#ffd117
+    }
 p{
     color:#3A3838;
     font-family: 'Jost', sans-serif;
-    font-size:var(--font-size);
+    font-size:calc(var(--font-size)*0.8);
+    max-width: 35rem;
 }
 
 blockquote{
     color:var(--title-color);
     font-family:'Source Serif 4', serif;
     font-size:calc(var(--font-size)*1.2);
-    padding:10% 0;
-    border-radius: 50%;
+    max-width: 35rem;
 }
 
 .quote{
     background-color:var(--blockquote-color);
+    border-radius: 50%;
+    margin:var(--spacing) 0px;
 }
 
+hr{
+    border-bottom: 1px solid black;
+    margin:calc(var(--spacing)*2)
+}
 
 
 

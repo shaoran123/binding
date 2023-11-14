@@ -1,0 +1,15 @@
+:root{
+    --font-display:'helvatica';
+    --spacing:10px;
+    --font-size:20pt;
+    --title-color:#323232;
+    --background-color:#27CC73;
+    --blockquote-color:#dfebda;
+
+}
+
+h2{
+    font-size: calc(var(--font-size)*3);
+    line-height: calc(var(--spacing)*7);
+    letter-spacing:calc(var(--spacing)*-1);
+}

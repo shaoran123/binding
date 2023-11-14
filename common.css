@@ -13,12 +13,12 @@ aside{
 h2{
     color:var(--title-color)
 }
+
 ul{
     display: flex;
     gap:calc(var(--spacing)*2);
 	flex-wrap: nowrap;
 }
-
 
 section{
     padding:calc(var(--spacing)*2);

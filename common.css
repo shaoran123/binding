@@ -67,5 +67,25 @@ footer{
     height:50px;
     width:50px;
     background-color:#f1e6d1;
+    text-align:center;
+    border:solid 1px black;
 }
 
+.dot{
+    height: 40px;
+    width: 60px;
+    min-width: 20px;
+    border-radius: 50%;
+    transform:rotate(-20deg);
+    border: 1px solid black;
+    display: inline-block;
+}
+.dot:nth-child(1){
+    background-color:#FF6E04;
+}
+.dot:nth-child(2){
+    background-color:#27CC73;
+}
+.dot:nth-child(3){
+    background-color:#FFBD13;
+}

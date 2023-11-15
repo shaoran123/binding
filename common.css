@@ -64,6 +64,8 @@ footer{
     right: 30px;
     z-index: 99;
     bottom:30px;
+    height:50px;
+    width:50px;
     background-color:#ebecee;
     border: 1px solid black;
 }

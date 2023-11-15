@@ -1,7 +1,9 @@
 :root{
     --font-display:'helvatica';
+    --font-p:'helvatica';
+    --font-blockquote:'Source Serif 4', serif;
     --spacing:10px;
-    --font-size:20pt;
+    --font-size:16pt;
     --title-color:#323232;
     --background-color:#FF6E04;
     --blockquote-color:#F5E9E0;
@@ -86,6 +88,7 @@ h2{
     }
     */
 
+    /*Title font*/
     .bigsan{
         font-family: 'Syncopate', sans-serif;
     }
@@ -126,15 +129,11 @@ h2{
     }
 p{
     color:#3A3838;
-    font-family: 'Jost', sans-serif;
-    font-size:calc(var(--font-size)*0.8);
     max-width: 35rem;
 }
 
 blockquote{
     color:var(--title-color);
-    font-family:'Source Serif 4', serif;
-    font-size:calc(var(--font-size)*1.2);
     max-width: 35rem;
 }
 

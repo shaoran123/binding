@@ -2,18 +2,23 @@
     --font-display:'helvatica';
     --font-p:'helvatica';
     --font-blockquote:'Source Serif 4', serif;
-    --spacing:10px;
+    --spacing:12px;
     --font-size:16pt;
     --title-color:#323232;
     --background-color:#FF6E04;
-    --blockquote-color:#F5E9E0;
+    --blockquote-color:#ceecef;
 
 }
 
+html,body
+{
+    overflow-x: hidden; 
+}
+
 h2{
-    font-size: calc(var(--font-size)*3);
+    font-size: calc(var(--font-size)*4);
     line-height: calc(var(--spacing)*7);
-    letter-spacing:calc(var(--spacing)*-1);
+    letter-spacing:calc(var(--spacing)*-.5);
 }
 
 .word {
@@ -122,6 +127,7 @@ h2{
     border-radius:50%;
     padding:20px;
     font-family:'Handjet', cursive;
+    font-size: var(--font-size);
     margin-left:calc(var(--spacing)*2)
     }
     #button:hover{
@@ -139,14 +145,25 @@ blockquote{
 
 .quote{
     background-color:var(--blockquote-color);
-    border-radius: 50%;
-    margin:var(--spacing) 0px;
+    margin:calc(var(--spacing)*2);
+    border:solid 1px #323232;
+    max-width: 35rem;
+
 }
 
 hr{
     border-bottom: 1px solid black;
-    margin:calc(var(--spacing)*2)
+    margin:calc(var(--spacing)*2);
+    display:none;
 }
 
+
+.title-container p{
+    padding:calc(var(--spacing)*2);
+    color:#323232;
+    font-size:28px;
+    margin-top:20px;
+    font-family:'Jost', sans-serif;
+}
 
 

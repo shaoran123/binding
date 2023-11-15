@@ -3,22 +3,19 @@
     --font-p:'helvatica';
     --font-blockquote:'helvatica';
     --spacing:10px;
-    --font-size:14pt;
+    --font-size:16pt;
     --title-color:#323232;
     --background-color:#27CC73;
-    --blockquote-color:#dfebda;
+    --blockquote-color:#FF6E04;;
 }
 
 html,body
 {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
     overflow-x: hidden; 
 }
 
 h2{
-    font-size: calc(var(--font-size)*6);
+    font-size: calc(var(--font-size)*5);
     line-height: calc(var(--spacing)*10);
     letter-spacing:calc(var(--spacing)*-.5);
 }

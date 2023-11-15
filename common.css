@@ -1,6 +1,12 @@
 html{
     background-color:#F3F2F2;
 }
+
+html,body
+{
+    overflow-x: hidden; 
+}
+
 nobr{
     white-space: nowrap;
 }
@@ -53,4 +59,15 @@ footer{
     font-size:var(--font-size);
 }
 
+.top {
+    position: fixed;
+    right: 30px;
+    z-index: 99;
+    bottom:30px;
+    height: 72px;
+    width:72px;
+    background-color:#ebecee;
+    border: 1px solid black;
+    text-align: center;
+}
 

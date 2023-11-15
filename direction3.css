@@ -1,0 +1,112 @@
+:root{
+    --font-display:'helvatica';
+    --font-p:'Jost';
+    --font-blockquote:'Source Serif 4', serif;
+    --spacing:12px;
+    --font-size:16pt;
+    --title-color:#323232;
+    --background-color:#FFBD13;
+    --blockquote-color:#323232;
+
+}
+
+html{
+    text-align: center;
+}
+
+/*title font*/
+h2{
+    font-size: calc(var(--font-size)*4);
+    line-height: calc(var(--spacing)*7);
+    letter-spacing:calc(var(--spacing)*-.5);
+}
+
+.bigsan{
+    font-family: 'Syncopate', sans-serif;
+}
+.cursive{
+    font-family: 'Mrs Saint Delafield', cursive;
+    letter-spacing:-0.1em;
+}
+.digital{
+    font-family: 'Handjet', cursive;
+}
+.jost{
+    font-family: 'Jost', sans-serif;
+    font-weight:400;
+}
+.serif{
+    font-family: 'Source Serif 4', serif;
+}
+.thinletter{
+    font-family:'Truculenta', sans-serif;
+}
+.italic{
+    font-family: 'STIX Two Text', serif;
+    font-weight:400;
+    font-style: italic;
+}
+
+.word {
+    white-space: nowrap;
+  }
+
+  hr{
+    border-bottom: 1px solid #bcbcbc;
+    margin:calc(var(--spacing)*2);
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+#button{
+    display:border;
+    border:2px solid #FF6E04;
+    background-color: #ffd117;
+    border-radius:0%;
+    padding:20px;
+    width:90%;
+    margin:0px 20px;
+    font-family:'helvatica';
+    text-align: center;
+    max-width:35rem;
+    
+    }
+#button:hover{
+    background-color:#ffd117
+}
+
+.title-container p{
+    padding:calc(var(--spacing)*2);
+    color:#FF6E04;
+    font-size:28px;
+    margin-top:20px;
+    font-family:'Jost', sans-serif;
+}
+
+blockquote, p{
+    max-width:50rem;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+p{
+    color:#323232;
+}
+
+.scrollarticle{
+    background-color: #cfe5bc;
+    height: 500px;
+    display: grid;
+	padding: calc(var(--spacing*2));
+    margin:calc(var(--spacing)*2);
+    overflow: hidden; 
+    overflow-y: auto;
+    border: 2px solid #FF6E04;
+    max-width: fit-content;
+}
+
+footer{
+    margin-top:100px;
+}

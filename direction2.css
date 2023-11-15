@@ -9,10 +9,6 @@
     --blockquote-color:#FF6E04;;
 }
 
-html,body
-{
-    overflow-x: hidden; 
-}
 
 h2{
     font-size: calc(var(--font-size)*5);

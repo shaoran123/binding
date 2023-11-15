@@ -10,11 +10,6 @@
 
 }
 
-html,body
-{
-    overflow-x: hidden; 
-}
-
 h2{
     font-size: calc(var(--font-size)*4);
     line-height: calc(var(--spacing)*7);

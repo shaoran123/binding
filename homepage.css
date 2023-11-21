@@ -45,16 +45,16 @@ h3{
     display: inline-block;
 }
 
-li:nth-child(1){
+#home{
     background-color:#323232;
 }
-li:nth-child(2){
+#article1{
     background-color:#FEC0FF;
 }
-li:nth-child(3){
+#article2{
     background-color:#F1FF50;
 }
-li:nth-child(4){
+#article3{
     background-color:#50FFC0;
 }
 
@@ -121,7 +121,7 @@ p{
 
 .author{
     font-size: var(--font-size);
-    font-family: 'Source Serif 4', serif;
+    font-family: var(--font-p);
 }
 
 aside{

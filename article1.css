@@ -5,7 +5,7 @@
     --spacing:12px;
     --font-size:16pt;
     --title-color:#323232;
-    --background-color:#FFBD13;
+    --background-color:#FEC0FF;
     --blockquote-color:#323232;
 
 }
@@ -19,6 +19,7 @@ h2{
     font-size: calc(var(--font-size)*4);
     line-height: calc(var(--spacing)*7);
     letter-spacing:calc(var(--spacing)*-.5);
+    color:#323232;
 }
 
 .bigsan{
@@ -59,10 +60,15 @@ h2{
 
 }
 
+aside{
+    align-items: center;
+    justify-content: center;
+}
+
 #button{
     display:border;
-    border:2px solid #FF6E04;
-    background-color: #ffd117;
+    border:2px solid #FEC0FF;
+    background-color: #eeeeee;
     border-radius:0%;
     padding:20px;
     width:90%;
@@ -70,17 +76,20 @@ h2{
     font-family:'helvatica';
     text-align: center;
     max-width:35rem;
-    
     }
+
 #button:hover{
-    background-color:#ffd117
+    background-color:#dddddd;
+}
+
+hgroup{
+    background-color: #FEC0FF;
 }
 
 .title-container p{
-    padding:calc(var(--spacing)*2);
-    color:#FF6E04;
+    padding:calc(var(--spacing)*1);
+    color:#fd8cff;
     font-size:28px;
-    margin-top:20px;
     font-family:'Jost', sans-serif;
 }
 
@@ -96,17 +105,55 @@ p{
 }
 
 .scrollarticle{
+    position:relative;
     background-color: #cfe5bc;
     height: 500px;
-    display: grid;
+    border-radius: 5%;
 	padding: calc(var(--spacing*2));
     margin:calc(var(--spacing)*2);
     overflow: hidden; 
     overflow-y: auto;
-    border: 2px solid #FF6E04;
+    border: 2px solid #FEC0FF;
     max-width: fit-content;
+    justify-content: space-around;
+    text-align: center;
 }
 
 footer{
     margin-top:100px;
+}
+
+@media (min-width: 900px) {
+
+    h2{
+        font-size: calc(var(--font-size)*6);
+        line-height: calc(var(--spacing)*11);
+        letter-spacing:calc(var(--spacing)*-1);
+    }
+    /*idea 1 blur
+    .word{
+        filter: blur(10px);
+    }
+    .word:hover{
+        filter: blur(0px);
+    }
+    */
+
+
+
+    .scrollarticle{
+        height:500px;
+        text-align: center;
+        margin-left:auto;
+        margin-right:auto;
+        border-radius: 80%;
+        padding:0 5%;
+    }
+
+    .scrollarticle:hover{
+        border-radius: 2%;
+        background-color: #e5e8ff;
+        transition-duration: 300ms;
+        
+    }
 }

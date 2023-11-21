@@ -6,7 +6,7 @@
     --font-size:16pt;
     --title-color:#323232;
     --background-color:#27CC73;
-    --blockquote-color:#FF6E04;;
+    --blockquote-color:#3A3838;
 }
 
 
@@ -15,10 +15,6 @@ h2{
     line-height: calc(var(--spacing)*10);
     letter-spacing:calc(var(--spacing)*-.5);
 }
-.word {
-    white-space: nowrap;
-  }
-
 
 #button{
     display:border;

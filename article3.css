@@ -5,9 +5,12 @@
     --spacing:12px;
     --font-size:16pt;
     --title-color:#323232;
-    --background-color:#FF6E04;
+    --background-color:#50FFC0;
     --blockquote-color:#ceecef;
 
+}
+html{
+    text-align: center;
 }
 
 h2{
@@ -15,12 +18,12 @@ h2{
     line-height: calc(var(--spacing)*7);
     letter-spacing:calc(var(--spacing)*-.5);
 }
-
+/*old version 3
 .word {
     white-space: nowrap;
   }
 
-    /*Title font*/
+    Title font
     .bigsan{
         font-family: 'Syncopate', sans-serif;
     }
@@ -46,11 +49,11 @@ h2{
         font-weight:400;
         font-style: italic;
     }
-    
+*/
 #button{
     display:border;
-    border:2px solid #FF6E04;
-    background-color: #ffd117;
+    border:2px solid white;
+    background-color: #50FFC0;
     border-radius:50%;
     padding:20px;
     font-family:'Handjet', cursive;
@@ -58,11 +61,13 @@ h2{
     margin-left:calc(var(--spacing)*2)
     }
     #button:hover{
-        background-color:#ffd117
+        background-color:#40d9a1
     }
 p{
     color:#3A3838;
     max-width: 35rem;
+    margin-left: auto;
+    margin-right:auto;
 }
 
 blockquote{

@@ -2,13 +2,12 @@
     --font-display:'Handjet', cursive;
     --font-p:'helvatica';
     --font-blockquote:'helvatica';
-    --spacing:10px;
+    --spacing:12px;
     --font-size:16pt;
     --title-color:#323232;
-    --background-color:#27CC73;
+    --background-color:#F1FF50;
     --blockquote-color:#3A3838;
 }
-
 
 h2{
     font-size: calc(var(--font-size)*5);
@@ -18,8 +17,7 @@ h2{
 
 #button{
     display:border;
-    border:2px solid #27CC73;
-    background-color: #ffd117;
+    background-color:#F1FF50;
     border-radius:0%;
     padding:20px;
     width:90%;

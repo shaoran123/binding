@@ -52,7 +52,7 @@ h2{
     white-space: nowrap;
   }
 
-  hr{
+hr{
     border-bottom: 1px solid #bcbcbc;
     margin:calc(var(--spacing)*2);
     margin-left:auto;
@@ -60,10 +60,6 @@ h2{
 
 }
 
-aside{
-    align-items: center;
-    justify-content: center;
-}
 
 #button{
     display:border;
@@ -130,6 +126,8 @@ footer{
         line-height: calc(var(--spacing)*11);
         letter-spacing:calc(var(--spacing)*-1);
     }
+
+    
     /*idea 1 blur
     .word{
         filter: blur(10px);

@@ -8,6 +8,7 @@
             <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@700&family=Arimo:ital@1&family=Grenze+Gotisch&family=Handjet&family=Hepta+Slab&family=Josefin+Slab:ital,wght@0,100;0,400;0,600;1,100;1,400&family=Jost&family=League+Gothic&family=Mrs+Saint+Delafield&family=Noto+Serif+Bengali:wght@700&family=Patrick+Hand&family=STIX+Two+Text:ital@1&family=Source+Serif+4:opsz@8..60&family=Space+Grotesk&family=Stick+No+Bills&family=Syncopate&family=Truculenta:opsz@12..72&display=swap');
+                @import url("https://use.typekit.net/byv3bce.css");
             </style>
 
             <!--The three different variations-->
@@ -24,24 +25,46 @@
             <aside>
                 <nav id="bar">
                     <ul>
-                        <li><a href="index.html"><span id="home" class="dot"></span></a></li>
-                        <li><a href="article1.html"><span id="article1" class="dot"></span></a></li>
-                        <li><a href="article2.html"><span id="article2" class="dot"></span></a></li>
-                        <li><a href="article3.html"><span id="article3" class="dot"></span></a></li>
+                        <li><a href="index.html"><span id="home" class="dot"></span><p>0</p></a></li>
+                        <li><a href="article1.html"><span id="article1" class="dot"></span><p>1</p></a></li>
+                        <li><a href="article2.html"><span id="article2" class="dot"></span><p>2</p></a></li>
+                        <li><a href="article3.html"><span id="article3" class="dot"></span><p>3</p></a></li>
                     </ul>
                 </nav>
             </aside>
             <main>
                 <div class="title-container">
-                    <h2>Now you <nobr>see it</nobr></h2>
+                    <h2>
+                        <span class="word">
+                            <span class="bigsan">N</span>
+                            <span class="cursive">o</span>
+                            <span class="digital">w&nbsp&nbsp</span>
+                        </span>
+                        <span class="word">
+                            <span class="jost">Y</span>
+                            <span class="serif">o</span>
+                            <span class="digital">u&nbsp&nbsp</span>
+                        </span>
+                        <span class="word">
+                            <span class="serif">S</span>
+                            <span class="digital">e</span>
+                            <span class="digital">e&nbsp&nbsp</span>
+                        </span>
+                        <span class="word">
+                            <span class="serif">I</span>
+                            <span class="italic">t&nbsp&nbsp</span>
+                        </span>
+                    </h2>
                     <p>Helvetica, Modernism and the Status Quo of Design</p>
                 </div>
                 <hgroup>
                     <hr>
-                    <section class="author">
-                        By Jen Wang
-                    </section>
-                    <button id="button"><a href="https://medium.com/@earth.terminal/now-you-see-it-110b77fd13db">CHECK ARTICLE</a></button>
+                    <div class="author">
+                        <section>
+                            <p>By Jen Wang</p>
+                        </section>
+                        <button id="button"><a href="https://medium.com/@earth.terminal/now-you-see-it-110b77fd13db">CHECK ARTICLE</a></button>
+                    </div>
                     <hr>
                 </hgroup>
                 <article>
@@ -101,5 +124,9 @@
                 <p>Made by Shaoran Liang · Typography & Interaction</p>
             </footer>
         </body>
+        <nav>
+            <button class="left"><a href="article1.html"><span class="ec-point-left"></span></a></button>
+            <button class="right"><a href="article3.html"><span class="ec-point-right"></span></a></button>
+        </nav>
     </html>
 </doctype>

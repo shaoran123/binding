@@ -1,6 +1,6 @@
 :root{
-    --font-display:'Handjet', cursive;
-    --font-p:'helvatica';
+    --font-display:'helvatica';
+    --font-p:'neue-haas-grotesk-text';
     --font-blockquote:'Source Serif 4', serif;
     --spacing:12px;
     --font-size:16pt;
@@ -9,42 +9,13 @@
     --blockquote-color:#3A3838;
 }
 
-
-h2{
-    font-size: calc(var(--font-size)*5);
-    line-height: calc(var(--spacing)*9);
-    text-align: center;
-}
-
 .title-container p{
     margin-left:auto;
     margin-right:auto;
     text-align: center;
 }
-hgroup{
-    text-align: center;
-}
-
-#button{
-    display:border;
-    border:2px solid #FF6E04;
-    background-color: #F1FF50;
-    border-radius:50%;
-    padding:20px;
-    font-family:'Handjet', cursive;
-    font-size: var(--font-size);
-    margin-left:calc(var(--spacing)*2)
-    }
-    #button:hover{
-        background-color:#ffd117
-    }
     
-hr{
-    border-bottom: 5px dotted #FF6E04;
-    margin:calc(var(--spacing)*2);
-    display:none
 
-}
 .title-container p{
     padding:calc(var(--spacing)*2);
     color:#FF6E04;
@@ -57,15 +28,14 @@ blockquote, p{
     max-width: 50rem;
 }
 
+.right:hover{
+    background-color:#50FFC0;
+}
+.left:hover{
+    background-color:#FEC0FF;
+}
+
 @media (min-width: 1000px) {
-
-
-    h2{
-        font-size: calc(var(--font-size)*9);
-        line-height: calc(var(--spacing)*11);
-        text-align: center;
-
-    }
 
     article{
         margin-left:10%;
@@ -86,6 +56,7 @@ blockquote, p{
         border-radius: 50%;
         transform: rotate(25deg);
     }
+    
 
 
 }

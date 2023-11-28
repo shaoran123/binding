@@ -1,3 +1,41 @@
+/*title font*/
+h2{
+    font-size: calc(var(--font-size)*4);
+    line-height: calc(var(--spacing)*7);
+    letter-spacing:calc(var(--spacing)*-.5);
+}
+
+.bigsan{
+    font-family: 'Syncopate', sans-serif;
+}
+.cursive{
+    font-family: 'Mrs Saint Delafield', cursive;
+    letter-spacing:-0.1em;
+}
+.digital{
+    font-family: 'Handjet', cursive;
+}
+.jost{
+    font-family: 'Jost', sans-serif;
+    font-weight:400;
+}
+.serif{
+    font-family: 'Source Serif 4', serif;
+}
+.thinletter{
+    font-family:'Truculenta', sans-serif;
+}
+.italic{
+    font-family: 'STIX Two Text', serif;
+    font-weight:400;
+    font-style: italic;
+}
+
+.word {
+    white-space: nowrap;
+  }
+
+
 /*nav bar*/
 .dot{
     height: 40px;
@@ -5,13 +43,20 @@
     min-width: 20px;
     border-radius: 50%;
     transform:rotate(-20deg);
-    border: 1px solid black;
     display: inline-block;
+    position:relative;
+    
 }
+
+li p{
+    position:absolute;
+    margin-top:-64px;
+    margin-left:40px;
+}
+
 aside{
     display: flex;
     justify-content: space-around;
-    text-align: center;
     position:relative;
 }
 
@@ -21,7 +66,7 @@ aside{
 }
 
 #home{
-    background-color:#323232;
+    background-color:#c6c6c6;
 }
 #article1{
     background-color:#FEC0FF;
@@ -35,8 +80,10 @@ aside{
 
 /* old css for articles*/
 html{
-    background-color:#F3F2F2;
+    background-color:#eeeeee;
 }
+
+
 
 html,body
 {
@@ -49,21 +96,51 @@ nobr{
 
 h1,h2,h3,h4,h5{
     font-family:var(--font-display);
-    padding:calc(var(--spacing)*2);
+    padding:calc(var(--spacing)*3);
+    text-align: center;
 }
 
 h1,h2{
     color:var(--title-color);
 }
 
+hr{
+    border-bottom: 1px solid black;
+    margin:calc(var(--spacing)*3);
+}
+
+blockquote, p{
+    max-width:45rem;
+    margin-left:auto;
+    margin-right:auto;
+}
+
 p{
     font-family:var(--font-p);
     font-size:var(--font-size);
-    padding: calc(var(--spacing)*2) 0px;
+    padding: calc(var(--spacing)*3) 0px;
+    line-height: 140%;;
+    color:var(--title-color);
 }
 
 .author{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+hgroup{
+    text-align: center;
+}
+
+#button{
+    align-self: center; 
+    display:border;
+    background-color: var(--background-color);
+    padding:20px;
+    font-family:'Handjet', cursive;
     font-size: var(--font-size);
+    margin-left:calc(var(--spacing)*2);
 }
 
 blockquote{
@@ -92,26 +169,79 @@ footer{
     padding:calc(var(--spacing)*2);
     background-color:var(--background-color);
     font-size:var(--font-size);
+    text-align:center;
 }
 
-.top {
+/*footer left right nav*/
+.right {
     position: fixed;
     right: 30px;
     z-index: 99;
     bottom:30px;
-    height:50px;
+    height:40px;
     width:50px;
-    background-color:#f1e6d1;
+    rotate: -10deg;
     text-align:center;
-    border:solid 1px black;
+    border-radius: 50%;
+    background-color: white;
 }
 
-.dot{
-    height: 40px;
-    width: 60px;
-    min-width: 20px;
+.right span{
+    position:absolute;
+    bottom:20px;
+    transform:scale(250%) rotate(-10deg);
+
+}
+
+.left {
+    position: fixed;
+    left: 30px;
+    z-index: 99;
+    bottom:30px;
+    height:40px;
+    width:50px;
+    rotate: 10deg;
+    text-align:center;
     border-radius: 50%;
-    transform:rotate(-20deg);
-    border: 1px solid black;
-    display: inline-block;
+    background-color: white;
+}
+
+.left span{
+    position:absolute;
+    bottom:20px;
+    right:28px;
+    transform:scale(250%) rotate(10deg);
+
+}
+
+
+
+@media (min-width: 768px) {
+
+    a:hover .dot{
+        box-shadow: inset 0 0 10px #b1b1b1;
+    }
+
+    #button:hover{
+        box-shadow: inset 0 0 20px #b1b1b1;
+    }
+
+    nav li:hover{
+        transform: scale(110%);
+    }
+
+    hr{
+        margin:calc(var(--spacing)*5);
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width:900px){
+    h2{
+        font-size: calc(var(--font-size)*6);
+        line-height: calc(var(--spacing)*11);
+        letter-spacing:calc(var(--spacing)*-1);
+    }
 }

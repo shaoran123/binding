@@ -54,7 +54,20 @@ article section:first-child{
     background-color:#F1FF50;
 }
 
+blockquote::before{
+    content:"";
+    display:block;
+    position: absolute;
+    z-index: -1;
+    height:2em;
+    width:1em;
+    rotate:-55deg;
+    border-radius: 50%;
+    background-color:var(--background-color);
+}
+
 @media (min-width:900px){
+
     article div:first-child{
         margin-top:100px;
     }

@@ -10,7 +10,6 @@
 
 }
 
-
 .title-container p{
     padding:calc(var(--spacing)*3);
     color:#fd8cff;
@@ -23,10 +22,6 @@ article div:first-child{
     margin-top:30px;
 }
 
-p{
-    color:var(--title-color);
-}
-
 .scrolltitle{
     position:relative;
     border-radius: 5%;
@@ -34,7 +29,7 @@ p{
     margin:calc(var(--spacing)*3);
     overflow: hidden; 
     overflow-y: auto;
-    background-color: #cfe5bc;
+    background-color: #FEC0FF;
     max-width: fit-content;
     justify-content: space-around;
 }
@@ -99,14 +94,6 @@ article a:hover{
         border:none;
     }
 
-    .scrolltitle:nth-child(2n):hover{
-        background-color:#FEC0FF;
-    }
-    .scrolltitle:nth-child(2n-1):hover{
-        background-color:#cfe5bc;
-    }
-
-
     hgroup hr{
         margin-top:-5px;
         margin-bottom:-5px;
@@ -115,5 +102,16 @@ article a:hover{
     article div:first-child{
         margin-top:100px;
     }
+
+    .left-tag {
+        left: -40px;
+        rotate:-90deg;
+    }
+
+    .right-tag {
+        right: -40px;
+        rotate:90deg;
+    }
+
 
 }

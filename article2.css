@@ -91,13 +91,13 @@ article a:hover{
     }
 
     blockquote{
-        transform: rotate(2deg);
+        transform: rotate(0deg);
     }
 
     blockquote:hover{
         background-color: #f0ff5063;
         border-radius: 50%;
-        transform: rotate(5deg);
+        transform: rotate(3deg);
     }
 
     h2 span span:hover{

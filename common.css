@@ -264,7 +264,6 @@ footer{
     .left-tag, .right-tag {
         position: fixed;
         top: 50%;
-        transform: translateY(-50%);
         font-size: var(--font-p);
         color:#b1b1b1;
         display:block;

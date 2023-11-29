@@ -94,7 +94,7 @@ nobr{
     white-space: nowrap;
 }
 
-h1,h2,h3,h4,h5{
+h1,h2,h3{
     font-family:var(--font-display);
     padding:calc(var(--spacing)*3);
     text-align: center;
@@ -109,7 +109,7 @@ hr{
     margin:calc(var(--spacing)*3);
 }
 
-blockquote, p{
+blockquote, p ,h4{
     max-width:45rem;
     margin-left:auto;
     margin-right:auto;
@@ -121,6 +121,10 @@ p{
     padding: calc(var(--spacing)*3) 0px;
     line-height: 140%;;
     color:var(--title-color);
+}
+
+em{
+    font-weight:600;
 }
 
 .author{
@@ -145,7 +149,7 @@ hgroup{
 
 blockquote{
     font-family:var(--font-blockquote);
-    font-size:calc(var(--font-size)*1.5);
+    font-size:calc(var(--font-size)*1.2);
     color:var(--blockquote-color);
 }
 
@@ -214,6 +218,10 @@ footer{
 
 }
 
+.left-tag, .right-tag {
+    display:none;
+}
+
 
 
 @media (min-width: 768px) {
@@ -236,6 +244,10 @@ footer{
         margin-left: auto;
         margin-right: auto;
     }
+
+    blockquote{
+        font-size:calc(var(--font-size)*1.5);
+    }
 }
 
 @media (min-width:900px){
@@ -244,4 +256,28 @@ footer{
         line-height: calc(var(--spacing)*11);
         letter-spacing:calc(var(--spacing)*-1);
     }
+
+    h2 span span:hover{
+        color:var(--background-color);
+    }
+
+    .left-tag, .right-tag {
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: var(--font-p);
+        color:#b1b1b1;
+        display:block;
+    }
+
+    .left-tag {
+        left: -10px;
+        rotate:-90deg;
+    }
+
+    .right-tag {
+        right: -40px;
+        rotate:90deg;
+    }
+
 }

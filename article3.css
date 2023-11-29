@@ -61,10 +61,15 @@ blockquote::before{
     z-index: -1;
     height:2em;
     width:1em;
-    rotate:-55deg;
+    transform:rotate(-55deg);
     border-radius: 50%;
     background-color:var(--background-color);
 }
+
+blockquote:hover::before{
+    transform:rotate(90deg);
+}
+
 
 @media (min-width:900px){
 

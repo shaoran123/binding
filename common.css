@@ -45,7 +45,7 @@ h2{
     transform:rotate(-20deg);
     display: inline-block;
     position:relative;
-    
+    filter:drop-shadow(0 2px 2px rgba(0, 0, 0, 15%));
 }
 
 li p{
@@ -188,6 +188,7 @@ footer{
     text-align:center;
     border-radius: 50%;
     background-color: white;
+    filter:drop-shadow(0 2px 2px rgba(0, 0, 0, 15%));
 }
 
 .right span{
@@ -208,6 +209,7 @@ footer{
     text-align:center;
     border-radius: 50%;
     background-color: white;
+    filter:drop-shadow(0 2px 2px rgba(0, 0, 0, 15%));
 }
 
 .left span{
@@ -215,7 +217,6 @@ footer{
     bottom:20px;
     right:28px;
     transform:scale(250%) rotate(10deg);
-
 }
 
 .left-tag, .right-tag {

@@ -67,15 +67,6 @@ article a:hover{
         color:#fd8cff;
     }
 
-    /*idea 1 blur
-    .word{
-        filter: blur(10px);
-    }
-    .word:hover{
-        filter: blur(0px);
-    }
-    */
-
     .scrolltitle{
         height:120px;
         margin-left:auto;
